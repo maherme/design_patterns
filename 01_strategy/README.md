@@ -3,13 +3,48 @@
  - The client selects the algorithm to use.
  - It can be implemented using inheritance or implementing interfaces.
 
-## UML Diagram 
+## UML Diagram
+### General
 ```mermaid
   classDiagram
+      class Client
+      class IStrategy{
+          <<interface>>
+          +Algorithm()
+      }
+      class Strategy1{
+          +Algorithm()
+      }
+      class Strategy2{
+          +Algorithm()
+      }
       Client o-- IStrategy
       Strategy1 ..|> IStrategy
       Strategy2 ..|> IStrategy
-      IStrategy : Algorithm()
-      Strategy1 : Algorithm()
-      Strategy2 : Algorithm()
+```
+### For this example
+```mermaid
+  classDiagram
+      class Program
+      class IOperation{
+          <<interface>>
+          +operation()
+      }
+      class CAdd{
+          +operation()
+      }
+      class CSub{
+          +operation()
+      }
+      class CMult{
+          +operation()
+      }
+      class CDiv{
+          +operation()
+      }
+      Program o-- IOperation
+      CAdd ..|> IOperation
+      CSub ..|> IOperation
+      CMult ..|> IOperation
+      CDiv ..|> IOperation
 ```
