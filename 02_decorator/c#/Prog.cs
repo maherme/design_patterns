@@ -36,6 +36,10 @@ namespace Decorator{
             Console.WriteLine(myVehicle.Working());
             Console.WriteLine(myVehicle);
             Console.WriteLine("------------");
+
+            // Call a method of an object which was decorated will failed due to the type cast can not
+            // be done, if you need to use this method, you need to think about including in the interface
+            // ((CVehicle)myVehicle).Engine(true);
         }
     }
 }
