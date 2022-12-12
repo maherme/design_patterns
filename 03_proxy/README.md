@@ -16,9 +16,10 @@
     class Subject{
       +Request()
     }
-    Client --|> ISubject
+    Client --|> ISubject : use
     Proxy ..|> ISubject
-    Proxy o-- Subject
+    Proxy o--|> Subject : use
+    Subject ..|> ISubject
 ```
 ### For this example
 ```mermaid
