@@ -21,14 +21,15 @@ namespace Composite
                     case "1":
                         Console.WriteLine("Type the name of the composite: ");
                         data = Console.ReadLine();
-                        IComponent<string> c = new CComposite<string>(data);
-                        node.Addition(c);
-                        node = c;
+                        IComponent<string> composite = new CComposite<string>(data);
+                        node.Addition(composite);
+                        node = composite;
                         break;
                     case "2":
                         Console.WriteLine("Type the name of the component: ");
                         data = Console.ReadLine();
-                        node.Addition(new CComponent<string>(data));
+                        IComponent<string> component = new CComponent<string>(data);
+                        node.Addition(component);
                         break;
                     case "3":
                         Console.WriteLine("Type the element to be erased: ");
