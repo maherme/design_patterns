@@ -37,12 +37,12 @@ namespace Bridge
         // Interface with the client
         public void ShowTotal()
         {
-            implementation.ShowTotal(product);
+            implementation.ShowTotalImp(product);
         }
 
         public void ListTotal()
         {
-            implementation.ListTotal(product);
+            implementation.ListTotalImp(product);
         }
     }
 }

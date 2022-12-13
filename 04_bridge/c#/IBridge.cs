@@ -4,7 +4,7 @@ namespace Bridge
 {
     interface IBridge
     {
-        void ShowTotal(Dictionary<string, double> pProduct);
-        void ListTotal(Dictionary<string, double> pProduct);
+        void ShowTotalImp(Dictionary<string, double> pProduct);
+        void ListTotalImp(Dictionary<string, double> pProduct);
     }
 }

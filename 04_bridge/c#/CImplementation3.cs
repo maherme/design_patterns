@@ -5,7 +5,7 @@ namespace Bridge
 {
     class CImplementation3:IBridge
     {
-        public void ShowTotal(Dictionary<string, double> pProd)
+        public void ShowTotalImp(Dictionary<string, double> pProd)
         {
             double total = 0;
             double totalA = 0;
@@ -36,7 +36,7 @@ namespace Bridge
             Console.WriteLine("Total of {0} products is {1}$", amount, total);
         }
 
-        public void ListTotal(Dictionary<string, double> pProd)
+        public void ListTotalImp(Dictionary<string, double> pProd)
         {
             foreach(KeyValuePair<string, double> p in pProd){
                 Console.ForegroundColor = ConsoleColor.Yellow;
