@@ -36,20 +36,20 @@
     }
     class IBridge{
       <<interface>>
-      +ShowTotal()
-      +ListTotal()
+      +ShowTotalImp()
+      +ListTotalImp()
     }
     class Implementation1{
-      +ShowTotal()
-      +ListTotal()
+      +ShowTotalImp()
+      +ListTotalImp()
     }
     class Implementation2{
-      +ShowTotal()
-      +ListTotal()
+      +ShowTotalImp()
+      +ListTotalImp()
     }
     class Implementation3{
-      +ShowTotal()
-      +ListTotal()
+      +ShowTotalImp()
+      +ListTotalImp()
     }
     Program --|> CAbstraction
     CAbstraction --|> IBridge
