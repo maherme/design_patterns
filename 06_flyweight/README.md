@@ -5,7 +5,7 @@
  - It increases the CPU load.
  - The object has two states:
    - Intrinsic state: it is the invariable state, it can be shared.
-   - Extrinsic state: it is the variant state, it can not be shared.
+   - Extrinsic state: it is the variant state, it can not be shared. It is calculated when it is needed.
 
 ## UML Diagram
 ### General
