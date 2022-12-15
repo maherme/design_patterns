@@ -17,6 +17,7 @@
   classDiagram
    class Client
    class FlyweightFactory{
+     -flyweights_collection
      +getFlyweight()
    }
    class IFlyweight{
@@ -37,12 +38,14 @@
   classDiagram
     class Program
     class IFlyweight{
+      <<interface>>
       +void AddName(string pName);
       +void CalculatePrice();
       +void Show();
       +string GetName();
     }
     class CFlyweightFactory{
+      -List flyweights
       +int Addition(string pName)
     }
     class CRecipe{
