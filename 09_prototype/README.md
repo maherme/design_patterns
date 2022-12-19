@@ -28,27 +28,27 @@
     class Program
     class IPrototype{
       <<interface>>
-      +object Clone()
+      +Clone() object
     }
     class CAdminPrototypes{
       -Dictionary prototypes
-      +void AddPrototype(string pKey, IPrototype pPrototype)
-      +object CreatePrototype(string pKey)
+      +AddPrototype(string pKey, IPrototype pPrototype) void
+      +CreatePrototype(string pKey) object
     }
     class CValues{
       -double summation
       -int m
-      +object Clone()
+      +Clone() object
     }
     class CAuto{
       -string model
       -int price
-      +object Clone()
+      +Clone() object
     }
     class CPerson{
       -string name
       -int age
-      +object Clone()
+      +Clone() object
     }
     Program o--|> CAdminPrototypes
     CAdminPrototypes o--|> IPrototype
