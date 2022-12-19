@@ -31,16 +31,16 @@
     class Program
     class ITarget{
       <<interface>>
-      +int Addition(int pA, int pB)
+      +Addition(int pA, int pB) int
     }
     class CAdapter{
-      +int Addition(int pA, int pB)
+      +Addition(int pA, int pB) int
     }
     class CCalculator{
-      +int Addition(int pA, int pB)
+      +Addition(int pA, int pB) int
     }
     class CCalculatorArray{
-      +double AdditionArray(int[] pOperands)
+      +AdditionArray(int[] pOperands) double
     }
     Program o--|> CCalculator
     Program o--|> ITarget
