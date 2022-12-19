@@ -5,7 +5,8 @@
 
 ## UML Diagram
 ### General
-- **Client**
+- **Client** is the user of the Singleton.
+- **Singleton** is the class which you can only has one instance.
 ```mermaid
   classDiagram
     class Client
