@@ -39,23 +39,23 @@
     class Program
     class IFlyweight{
       <<interface>>
-      +void AddName(string pName);
-      +void CalculatePrice();
-      +void Show();
-      +string GetName();
+      +AddName(string pName) void
+      +CalculatePrice() void
+      +Show() void
+      +GetName() string
     }
     class CFlyweightFactory{
       -List flyweights
-      +int Addition(string pName)
+      +Addition(string pName) int
     }
     class CRecipe{
       -string name
       -double price
       -double sale
-      +void AddName(string pName);
-      +void CalculatePrice();
-      +void Show();
-      +string GetName();
+      +AddName(string pName) void
+      +CalculatePrice() void
+      +Show() void
+      +GetName() string
     }
     Program --|> CFlyweightFactory
     Program --|> CRecipe
