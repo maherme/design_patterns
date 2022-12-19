@@ -24,16 +24,16 @@
   classDiagram
     class Program
     class CFacade{
-      +void Buy()
+      +Buy() void
     }
     class CPurchaseSystem{
-      +bool Purchase()
+      +Purchase() bool
     }
     class CStorageSystem{
-      +bool GetStorage()
+      +GetStorage() bool
     }
     class CShipmentSystem{
-      +void SendOrder()
+      +SendOrder() void
     }
     Program --|> CFacade
     CFacade o--|> CPurchaseSystem
