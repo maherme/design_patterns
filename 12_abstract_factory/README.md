@@ -46,14 +46,59 @@
 ```mermaid
   classDiagram
     class Program
-    class IFactory
-    class CNaturalFactory
-    class CChemicalFactory
-    class IProductMilk
-    class CCowMilk
-    class CCoconutMilk
-    class CAlmondMilk
-    class IProductFlavoring
-    class CNaturalVanilla
-    class CChocolateFlavor
+    class IFactory{
+      <<interface>>
+      +createProducts() void
+    }
+    class CNaturalFactory{
+      +createProducts() void
+    }
+    class CChemicalFactory{
+      +createProducts() void
+    }
+    class IProductMilk{
+      <<interface>>
+      +Produce() void
+      +getData() string
+    }
+    class CCowMilk{
+      +Produce() void
+      +getData() string
+    }
+    class CCoconutMilk{
+      +Produce() void
+      +getData() string
+    }
+    class CAlmondMilk{
+      +Produce() void
+      +getData() string
+    }
+    class IProductFlavoring{
+      <<interface>>
+      +getFlavor() void
+      +Information() string
+    }
+    class CNaturalVanilla{
+      +getFlavor() void
+      +Information() string
+    }
+    class CChocolateFlavor{
+      +getFlavor() void
+      +Information() string
+    }
+    Program o-- IFactory
+    Program o--IProductMilk
+    Program o-- IProductFlavoring
+    CNaturalFactory ..|> IFactory
+    CChemicalFactory ..|> IFactory
+    CNaturalFactory ..> CCowMilk
+    CNaturalFactory ..> CCoconutMilk
+    CNaturalFactory ..> CAlmondMilk
+    CChemicalFactory ..> CNaturalVanilla
+    CChemicalFactory ..> CChocolateFlavor
+    CCowMilk ..|> IProductMilk
+    CCoconutMilk ..|> IProductMilk
+    CAlmondMilk ..|> IProductMilk
+    CNaturalVanilla ..|> IProductFlavoring
+    CChocolateFlavor ..|> IProductFlavoring
 ```
