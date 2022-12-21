@@ -2,6 +2,9 @@
  - It decouples the specificaton of an object of its constructor.
  - The same constructor process can creates different representations.
  - It is based on directors and constructors.
+ - It is used for creating complex structures.
+ - It is used when the algorithm used for creating the parts is independent of the parts itself.
+ - It is useful when an accurate control of the construction process is required.
 
 ## UML Diagram
 ### General
